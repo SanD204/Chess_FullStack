@@ -1,0 +1,30 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Game {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  status    String
+  moves     Move[]
+}
+
+model Move {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  game      Game     @relation(fields: [gameId], references: [id])
+  gameId    String
+  player    String
+  from      String
+  to        String
+}
+
+model Custom {
+  id        String   @id @default(uuid())
+  player    String
+}
