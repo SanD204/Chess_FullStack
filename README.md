@@ -23,3 +23,5 @@ A multiplayer chess platform where users can either enter an open lobby or creat
 - **Real-time Communication:** WebSocket
 - **Database ORM:** Prisma
 - **Database:** PostgreSQL
+
+![Screenshot 2025-02-08 190917](https://github.com/user-attachments/assets/cf2affd5-51e6-45dd-bdc6-49b87c098cc1)
