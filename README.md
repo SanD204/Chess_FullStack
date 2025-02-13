@@ -23,5 +23,4 @@ A multiplayer chess platform where users can either enter an open lobby or creat
 - **Backend:** Node.js
 - **Language:** TypeScript
 - **Real-time Communication:** WebSocket
-- **Database ORM:** Prisma
 - **Database:** PostgreSQL
